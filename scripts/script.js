@@ -34,3 +34,14 @@ const executeCodes = () => {
 };
 
 window.addEventListener("load", executeCodes);
+
+// ------------------------ Navbar Mobile ------------------------
+
+const bar = document.getElementById('bar');
+const nav = document.getElementsById('navbar');
+
+if (bar) {
+    bar.addEventListener('click', () => {
+        nav
+    })
+}

@@ -69,7 +69,7 @@ button.normal {
 
 
 #header img {
-    width: 105px;   
+    width: 105px;
     padding: 0 5px;
     display: flex;
     justify-content: center;
@@ -78,24 +78,18 @@ button.normal {
     padding: 0;
 }
 
-.navbar {
+#navbar {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     list-style-type: none;
-}
-
-.navbar ul {
-    display: flex;
-    justify-content: center;
     -webkit-box-pack: center;
-    align-items: center;
     -webkit-box-align: center;
 }
 
-.menu_style {  
-    display: inline;   
+.menu_style {
+    display: inline;
     cursor: pointer;
     width: auto;
     box-sizing: border-box;
@@ -118,6 +112,10 @@ ul a {
 
 ul a:hover {
     border-bottom: 1px solid black;
+}
+
+.block {
+    display: none;
 }
 
 #adicionais {
@@ -175,6 +173,25 @@ ul a:hover {
     margin-left: 5px;
 }
 
+.mobile {
+    display: none;
+}
+
+.mobile i {
+    font-size: 19px;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+.mobile button {
+    border: 0;
+    background-color: #fff;
+}
+
+#close {
+    display: none;
+}
+
 /* -------------------------- BODY -------------------------- */
 
 .ofertas {
@@ -215,13 +232,14 @@ section#slider {
     background-color: #E6E7EA;
 }
 
-.slider_content{
+.slider_content {
     width: 400%;
     height: auto;
     display: flex;
 }
 
-.slider_content input, .img_mobile {
+.slider_content input,
+.img_mobile {
     display: none;
 }
 
@@ -237,7 +255,8 @@ section#slider {
     width: 100%;
 }
 
-.nav_manual, .nav_auto {
+.nav_manual,
+.nav_auto {
     position: absolute;
     width: 100%;
     margin-top: 31%;
@@ -245,7 +264,8 @@ section#slider {
     justify-content: center;
 }
 
-.nav_manual .manual_btn, .nav_auto div {
+.nav_manual .manual_btn,
+.nav_auto div {
     border: 1px solid black;
     padding: 8px;
     border-radius: 50%;
@@ -253,7 +273,8 @@ section#slider {
     transition: 0.2s;
 }
 
-.nav_manual .manual_btn:not(:last-child), .nav_auto div:not(:last-child) {
+.nav_manual .manual_btn:not(:last-child),
+.nav_auto div:not(:last-child) {
     margin-right: 10px
 }
 
@@ -261,19 +282,21 @@ section#slider {
     background-color: black;
 }
 
-#radio01:checked ~ .nav_auto .auto_btn1,#radio02:checked ~ .nav_auto .auto_btn2, #radio03:checked ~ .nav_auto .auto_btn3 {
+#radio01:checked~.nav_auto .auto_btn1,
+#radio02:checked~.nav_auto .auto_btn2,
+#radio03:checked~.nav_auto .auto_btn3 {
     background: black;
 }
 
-#radio01:checked ~ .primeiro {
+#radio01:checked~.primeiro {
     margin-left: 0%;
 }
 
-#radio02:checked ~ .primeiro {
+#radio02:checked~.primeiro {
     margin-left: -25%;
 }
 
-#radio03:checked ~ .primeiro {
+#radio03:checked~.primeiro {
     margin-left: -50%;
 }
 
@@ -304,8 +327,8 @@ section#slider {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;   
-    padding: 45px 0 15px ;
+    width: 100%;
+    padding: 45px 0 15px;
 }
 
 .box_position {
@@ -323,19 +346,19 @@ section#slider {
 }
 
 .box_position h3 {
-padding-bottom: 13px;
+    padding-bottom: 13px;
 }
 
 .box_position p {
     font-size: 0.9rem;
-    color:rgb(75, 75, 75);
+    color: rgb(75, 75, 75);
     padding-bottom: 19px;
 }
 
 .box_position a {
     color: black;
     text-decoration: none;
-    font-weight: 600 ;
+    font-weight: 600;
 }
 
 .box_position a:hover {
@@ -378,14 +401,14 @@ a:hover .mover {
     padding: 10px 12px;
     border: 1px solid #cce7d0;
     cursor: pointer;
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02) ;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
     margin: 15px 0;
     transition: 0.3s ease;
     position: relative;
 }
 
 #produtos .pro:hover {
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.09) ;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.09);
 }
 
 #produtos .pro img {
@@ -592,7 +615,7 @@ a:hover .mover {
     outline: none;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    
+
 }
 
 #newsletter button {
@@ -784,3 +807,163 @@ footer .copyright a {
     background-color: rgb(8, 184, 8);
 }
 
+/* ------------------ Midia Query ------------------  */
+
+@media (max-width: 1010px) {
+
+    button.normal {
+        padding: 10px 20px;
+    }
+
+    #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 280px;
+        background-color: white;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 90px 0 0 10px;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #navbar a {
+        margin: 0;
+    }
+
+    .block {
+        display: inline-block;
+    }
+
+    #adicionais {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #close {
+        display: flex;
+        position: absolute;
+        top: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    /* body */
+
+    .nav_manual .manual_btn, .nav_auto div {
+        padding: 4px;
+    }
+
+    .text_caract {
+        width: 100%;
+    }
+
+    #caract .text_caract h2 {
+        font-size: 19px;
+    }
+
+    #caract .text_caract h3 {
+        font-size: 15px;
+    }
+
+    .box_info { 
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .box_position {
+        margin-bottom: 15px;
+    }
+
+    #produtos p {
+        font-size: 15px;
+    }
+
+    #produtos h2 {
+        font-size: 33px;
+        line-height: 30px;
+    }
+
+    #produtos .pro_container {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+    
+    #banner {
+        height: 28.4vh;
+    }
+
+    #planos {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+    }
+
+    .plano_box {
+        width: 300px;
+    }
+
+    .plano_box img {
+        width: 85px;
+    }
+
+    .plano_box h2 {
+        font-size: 15px;
+    }
+
+    #planos ul li {
+        font-size: 11px;
+    }
+
+    #newsletter {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #newsletter h4 {
+        font-size: 17px;
+    }
+
+    #newsletter p {
+        font-size: 13px;
+    }
+
+    #newsletter .form {
+        width: 100%;
+    }
+
+    #newsletter input {
+        height: 2.5rem;
+        font-size: 13px;
+    }
+
+
+
+    .Cookie.show {
+        right: 16px;
+    }
+}
