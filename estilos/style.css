@@ -192,6 +192,8 @@ ul a:hover {
     display: none;
 }
 
+
+
 /* -------------------------- BODY -------------------------- */
 
 .ofertas {
@@ -337,6 +339,7 @@ section#slider {
     width: 250px;
     padding: 15px;
     box-shadow: 0px 0px 9px 0 rgba(0, 0, 0, 0.06)
+    margin: 7px 0 15px
 }
 
 .box_position i {
@@ -514,8 +517,6 @@ a:hover .mover {
 }
 
 .space_plan {
-    max-width: 750px;
-    margin-right: 0;
     display: flex;
     align-items: center;
     align-content: center;
@@ -705,6 +706,10 @@ footer .copyright a {
     color: #465b52;
 }
 
+footer .copyright a:hover {
+    color: rgb(44, 218, 44);
+}
+
 /* ------------------ Adicionais ------------------  */
 
 #scrollToTop {
@@ -807,6 +812,11 @@ footer .copyright a {
     background-color: rgb(8, 184, 8);
 }
 
+.texte {
+    width: 100%;
+    background-color: red;
+}
+
 /* ------------------ Midia Query ------------------  */
 
 @media (max-width: 1010px) {
@@ -872,7 +882,7 @@ footer .copyright a {
     /* body */
 
     .nav_manual .manual_btn, .nav_auto div {
-        padding: 4px;
+        padding: 5.3px;
     }
 
     .text_caract {
@@ -889,12 +899,14 @@ footer .copyright a {
 
     .box_info { 
         align-items: center;
-        flex-direction: column;
         flex-wrap: nowrap;
+        overflow-x: auto;
     }
 
     .box_position {
-        margin-bottom: 15px;
+        margin: 15px;
+        max-width: 251px;
+        min-width: 249px;
     }
 
     #produtos p {
@@ -907,12 +919,14 @@ footer .copyright a {
     }
 
     #produtos .pro_container {
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: nowrap;
+         justify-content: center;
         align-content: center;
     }
-    
+
+    #produtos .pro {
+        margin: 15px;
+    }
+
     #banner {
         height: 28.4vh;
     }
@@ -932,11 +946,11 @@ footer .copyright a {
     }
 
     .plano_box h2 {
-        font-size: 15px;
+        font-size: 16.5px;
     }
 
     #planos ul li {
-        font-size: 11px;
+        font-size: 12.5px;
     }
 
     #newsletter {
@@ -953,7 +967,7 @@ footer .copyright a {
     }
 
     #newsletter .form {
-        width: 100%;
+        width: 70%;
     }
 
     #newsletter input {
@@ -961,9 +975,38 @@ footer .copyright a {
         font-size: 13px;
     }
 
-
+    #newsletter button {
+        font-size: 14px
+    }
 
     .Cookie.show {
         right: 16px;
+    }
+}
+
+@media (max-width: 499px) {
+    
+    .section_p1 {
+        padding: 20px;
+    }
+
+    .nav_manual .manual_btn, .nav_auto div {
+        padding: 3.3px;
+    }
+
+    #produtos .pro {
+        width: 87%;
+    }
+
+    #banner {
+        height: 40vh;
+    }
+
+    .plano_box {
+        width: 80%;
+    }
+
+    #newsletter .form {
+        width: 100%;
     }
 }
