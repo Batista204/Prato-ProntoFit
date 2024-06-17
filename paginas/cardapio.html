@@ -1,43 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PratoPronto</title>
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="shortcut icon" href="imagens/Logos/Favicoon do Trabalho.png" type="image/x-icon">
-    <script async src="scripts/script.js" defer></script>
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="shortcut icon" href="../imagens/Logos/Favicoon do Trabalho.png" type="image/x-icon">
+    <script src="../scripts/script.js" defer></script>
     <script src="https://kit.fontawesome.com/9cea758d5a.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-
     <!-- -------------------------- HEADER -------------------------- -->
-
+    
     <div id="header">
 
         <h1>
-            <a href="index.html">
+            <a href="../index.html">
                 <span class="span01">
-                    <img src="imagens/Logos/Logo site trabalho.png" alt="voltar para home">
+                    <img src="../imagens/Logos/Logo site trabalho.png" alt="voltar para home">
                 </span>
             </a>
         </h1>
 
         <nav>
             <ul id="navbar">
-                <li role="menubar" class="menu_style"><a href="Cardapio.html" target="_blank">CARDAPIO</a></li>
-                <li role="menubar" class="menu_style"><a href="#" target="_blank">PREMIUM</a></li>
-                <li role="menubar" class="menu_style"><a href="#" target="_blank">CONTATO</a></li>
-                <li role="menubar" class="menu_style"><a href="#" target="_blank">NOVIDADES</a></li>
+                <li role="menubar" class="menu_style"><a href="Cardapio.html"><span>CARDAPIO</span></a></li>
+                <li role="menubar" class="menu_style"><a href="#">PREMIUM</a></li>
+                <li role="menubar" class="menu_style"><a href="#">CONTATO</a></li>
+                <li role="menubar" class="menu_style"><a href="#">NOVIDADES</a></li>
 
                 <li role="menuitem" class="menu_style block"><a href="#">LOGIN</a></li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
         </nav>
-
+ 
         <div id="adicionais">
             <div id="busca">
                 <form role="search" class="form_nav">
@@ -60,117 +57,38 @@
 
     <!-- -------------------------- BODY -------------------------- -->
 
-    <div class="ofertas">
-        <p><i class="fa-solid fa-dumbbell"></i> Cuide da sua saúde com os nossos descontos exclusivos. <a href="#">Saiba Mais</a></p>
-    </div>
-
-    <section id="slider">
-        <div class="slider_content">
-
-            <input type="radio" name="btn_radio" id="radio01">
-            <input type="radio" name="btn_radio" id="radio02">
-            <input type="radio" name="btn_radio" id="radio03">
-
-            <div class="slide_box primeiro">
-                <img class="img_desktop" src="imagens/Slides/Foto_slide_02.png" alt="slide 01">
-                <a href="#"><img class="img_mobile" src="imagens/Slides/Foto_Slide_Mob_01.png" alt="slide 01"></a>
-            </div>
-
-            <div class="slide_box">
-                <img class="img_desktop" src="imagens/Slides/Seja_Premium.png" alt="slide 02">
-                <a href="#"><img class="img_mobile" src="imagens/Slides/Foto_slide_mob_02.png" alt="slide 02"></a>
-            </div>
-
-            <div class="slide_box">
-                <img class="img_desktop" src="imagens/Slides/Sugestoes_do_Dia.png" alt="slide 03">
-                <a href="#"><img class="img_mobile" src="imagens/Slides/Foto_slide_mob_03.png" alt="slide 03"></a>
-            </div>
-
-            <div class="nav_auto">
-                <div class="auto_btn1"></div>
-                <div class="auto_btn2"></div>
-                <div class="auto_btn3"></div>
-            </div>
-
-            <div class="nav_manual">
-                <label for="radio01" class="manual_btn"></label>
-                <label for="radio02" class="manual_btn"></label>
-                <label for="radio03" class="manual_btn"></label>
-            </div>
-
-        </div>
-    </section>
-
-    <div class="texte"><img src="imagens/Receitas/img07.png" alt=""></div>
-
-    <section id="caract" class="section_p1">
-
-        <div class="text_caract">
-            <h2>Um mundo de possibilidades para aprimorar sua saúde e bem-estar</h2>
-            <h3>Se precisar de ajuda, aqui você tem atendimento humanizado 24h por dia, 7 dias por semana.</h3>
-        </div>
-        <div class="box_info">
-            <div class="box_position">
-                <i class="fa-solid fa-truck-fast"></i>
-                <h3>Velocidade</h3>
-                <p>Garantimos prdoutos de qualidade e entrega rápida para sua nutrição saudável sem demora.</p>
-                <a href="#">Saiba mais <spam class="mover">></spam></a>
-            </div>
-            <div class="box_position">
-                <i class="fa-solid fa-shield-halved"></i>
-                <h3>Confiança</h3>
-                <p>Priorizamos sua confiança com produtos saudáveis e informações nutricionais confiáveis.</p>
-                <a href="#">Saiba mais <spam class="mover">></spam></a>
-            </div>
-            <div class="box_position">
-                <i class="fa-solid fa-tag"></i>
-                <h3>Ofertas</h3>
-                <p>Aproveite nossas ofertas incríveis de produtos saudáveis com um preços especiais, mantendo a
-                    qualidade.</p>
-                <a href="#">Saiba mais <spam class="mover">></spam></a>
-            </div>
-            <div class="box_position">
-                <i class="fa-solid fa-hand-holding-heart"></i>
-                <h3>Saúde</h3>
-                <p>Priorizamos sua saúde a cima de tudo com produtose e informações que promovem seu bem-estar.</p>
-                <a href="#">Saiba mais <spam class="mover">></spam></a>
-            </div>
-            <div class="box_position">
-                <i class="fa-solid fa-utensils"></i>
-                <h3>Qualidade</h3>
-                <p>Oferecemos produtos de excelência, cuidadosamente selecionados para uma experiência nutritiva e
-                    deliciosa.</p>
-                <a href="#">Saiba mais <spam class="mover">></spam></a>
-            </div>
-
-        </div>
+    <section id="bannerPages" class="Cardapio">
+        <h2>#CARDÁPIO</h2>
+        <h4>Delicias à sua escolha!</p>
     </section>
 
     <section id="produtos" class="section_p1">
 
-        <p>Refinamento Fitness</p>
+        <!-- <p>Refinamento Fitness</p>
         <h2>PRATOS PRINCIPAIS</h2>
-        <p>Sabor que nutre, ingredientes que cuidam!</p>
+        <p>Sabor que nutre, ingredientes que cuidam!</p> -->
+
         <div class="pro_container">
-            <div class="pro">
-                <img src="imagens/Receitas/img01.png" alt="Imagem01">
-                <div class="descricao">
-                    <span>300 kcal</span>
-                    <h5>Wrap Integral com Atum e Vegetais</h5>
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+
+                <div class="pro" onclick="window.location.href='produto.html';">
+                    <img src="../imagens/Receitas/img01.png" alt="Imagem01">
+                    <div class="descricao">
+                        <span>300 kcal</span>
+                        <h5><a href="produto.html">Wrap Integral com Atum e Vegetais</a></h5>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h4>R$40,00</h4>
                     </div>
-                    <h4>R$40,00</h4>
+                    <a href="#"><i class="fa-solid fa-cart-shopping icon cart"></i> </a>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping icon cart"></i> </a>
-            </div>
 
             <div class="pro">
-                <img src="imagens/Receitas/img02.png" alt="Imagem01">
+                <img src="../imagens/Receitas/img02.png" alt="Imagem01">
                 <div class="descricao">
                     <span>400 kcal</span>
                     <h5>Salada de Quinoa com Frango Grelhado e Abacate</h5>
@@ -187,7 +105,7 @@
             </div>
 
             <div class="pro">
-                <img src="imagens/Receitas/img03.png" alt="Imagem01">
+                <img src="../imagens/Receitas/img03.png" alt="Imagem01">
                 <div class="descricao">
                     <span>150 kcal</span>
                     <h5>Omelete de Clara de Ovo com Espinafre e Tomate</h5>
@@ -204,7 +122,7 @@
             </div>
 
             <div class="pro">
-                <img src="imagens/Receitas/img04.png" alt="Imagem01">
+                <img src="../imagens/Receitas/img04.png" alt="Imagem01">
                 <div class="descricao">
                     <span>350 kcal</span>
                     <h5>Salmão com Legumes Assados no Forno</h5>
@@ -221,7 +139,7 @@
             </div>
 
             <div class="pro">
-                <img src="imagens/Receitas/img05.png" alt="Imagem01">
+                <img src="../imagens/Receitas/img05.png" alt="Imagem01">
                 <div class="descricao">
                     <span>200 kcal</span>
                     <h5>Bolo de Banana Fit com Aveia:</h5>
@@ -238,7 +156,7 @@
             </div>
 
             <div class="pro">
-                <img src="imagens/Receitas/img06.png" alt="Imagem01">
+                <img src="../imagens/Receitas/img06.png" alt="Imagem01">
                 <div class="descricao">
                     <span>450 kcal</span>
                     <h5>Hambúrguer de Frango Caseiro com Salada Colslaw</h5>
@@ -255,7 +173,7 @@
             </div>
 
             <div class="pro">
-                <img src="imagens/Receitas/img015.png" alt="Imagem01">
+                <img src="../imagens/Receitas/img015.png" alt="Imagem01">
                 <div class="descricao">
                     <span>300 kcal</span>
                     <h5>Bolo de Banana com Aveia e Canela </h5>
@@ -272,7 +190,7 @@
             </div>
 
             <div class="pro">
-                <img src="imagens/Receitas/img08.png" alt="Imagem01">
+                <img src="../imagens/Receitas/img08.png" alt="Imagem01">
                 <div class="descricao">
                     <span>200 Kcal</span>
                     <h5>Panqueca de Aveia com Banana e Frutas</h5>
@@ -288,25 +206,25 @@
                 <a href="#"><i class="fa-solid fa-cart-shopping icon cart"></i> </a>
             </div>
 
-        </div>
+            <div class="pro  mobile_produto">
+                <img src="../imagens/Receitas/img017.png" alt="Imagem017">
+                <div class="descricao">
+                    <span>150 Kcal</span>
+                    <h5>Creme de Manga com Chia e Hortelã</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>R$40,00</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping icon cart"></i></a>
+            </div>
 
-
-    </section>
-
-    <section id="banner" class="section_m1">
-        <h4>Oportunidade Única!</h4>
-        <h2><span>30% off</span> na compra do Plano Premium</h2>
-        <button class="normal">Assine agora</button>
-    </section>
-
-    <section id="produtos" class="section_p1">
-        <p>Abundância Fitness</p>
-        <h2>NOVAS BEBIDAS</h2>
-        <p>Eleve o seu bem-estar a cada gole!</p>
-
-        <div class="pro_container">
             <div class="pro">
-                <img src="imagens/Receitas/img09.png" alt="Imagem01">
+                <img src="../imagens/Receitas/img09.png" alt="Imagem01">
                 <div class="descricao">
                     <span>250 kcal</span>
                     <h5>Smoothie Verde Refrescante</h5>
@@ -323,7 +241,7 @@
             </div>
 
             <div class="pro">
-                <img src="imagens/Receitas/img010.png" alt="Imagem01">
+                <img src="../imagens/Receitas/img010.png" alt="Imagem01">
                 <div class="descricao">
                     <span>120 kcal</span>
                     <h5>Suco Detox de Laranja, Cenoura e Gengibre</h5>
@@ -340,7 +258,7 @@
             </div>
 
             <div class="pro">
-                <img src="imagens/Receitas/img011.png" alt="Imagem01">
+                <img src="../imagens/Receitas/img011.png" alt="Imagem01">
                 <div class="descricao">
                     <span>100 kcal</span>
                     <h5>Chá de Hibisco com Morango e Hortelã</h5>
@@ -357,7 +275,7 @@
             </div>
 
             <div class="pro">
-                <img src="imagens/Receitas/img012.png" alt="Imagem01">
+                <img src="../imagens/Receitas/img012.png" alt="Imagem01">
                 <div class="descricao">
                     <span>0 kcal</span>
                     <h5>Água Aromática de Maçã Verde com Limão e Canela</h5>
@@ -374,7 +292,7 @@
             </div>
 
             <div class="pro">
-                <img src="imagens/Receitas/img013.png" alt="Imagem01">
+                <img src="../imagens/Receitas/img013.png" alt="Imagem01">
                 <div class="descricao">
                     <span>0 kcal</span>
                     <h5>Água de Coco com Abacaxi e Hortelã </h5>
@@ -391,7 +309,7 @@
             </div>
 
             <div class="pro">
-                <img src="imagens/Receitas/img019.png" alt="Imagem01">
+                <img src="../imagens/Receitas/img019.png" alt="Imagem01">
                 <div class="descricao">
                     <span>100 kcal</span>
                     <h5>Suco de maçã com cenoura e limão</h5>
@@ -408,7 +326,7 @@
             </div>
 
             <div class="pro">
-                <img src="imagens/Receitas/img07.png" alt="Imagem01">
+                <img src="../imagens/Receitas/img07.png" alt="Imagem01">
                 <div class="descricao">
                     <span>250 kcal</span>
                     <h5>Smoothie de Frutas Vermelhas com Iogurte Grego</h5>
@@ -425,7 +343,7 @@
             </div>
 
             <div class="pro">
-                <img src="imagens/Receitas/img020.png" alt="Imagem01">
+                <img src="../imagens/Receitas/img020.png" alt="Imagem01">
                 <div class="descricao">
                     <span>100 Kcal</span>
                     <h5>Suco de maçã com morango e iogurte</h5>
@@ -440,65 +358,35 @@
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-shopping icon cart"></i> </a>
             </div>
+
+            <div class="pro mobile_produto">
+                <img src="../imagens/Receitas/img018.png" alt="Imagem018">
+                <div class="descricao">
+                    <span>250 Kcal</span>
+                    <h5>Pudim de Chia com Frutas Vermelhas</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>R$20,00</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping icon cart"></i> </a>
+            </div>
+
         </div>
     </section>
 
-    <section id="planos">
-
-        <div class="plano_normal">
-            <div class="space_plan">
-                <div class="plano_box">
-
-                    <div class="img_plano">
-                        <img src="imagens/Logos/Chapeu_Normal.png" alt="Plano-Silver">
-                    </div>
-
-                    <h2>Plano Premium Silver</h2>
-
-                    <ul>
-                        <li>Acesso Antecipado</li>
-                        <li>10% de Desconto em Produtos</li>
-                        <li>Receitas Exclusivas</li>
-                        <li>Planejador de Refeições</li>
-                        <li>Newsletter Exclusivas</li>
-                    </ul>
-
-                    <div class="button_plan">
-                        <button class="normal">Assine agora</button>
-                    </div>
-
-                </div>
-            </div>
+    <section id="button_page" class="section_p1">
+        <div class="box_page">
+            <ol class="list_number">
+                <a href="#" class="link_number number_active">1</a>
+                <a href="#" class="link_number">2</a>
+                <a href="#" class="link_number">></a>
+            </ol>
         </div>
-
-        <div class="plano_premium">
-            <div class="space_plan">
-                <div class="plano_box">
-
-                    <div class="img_plano">
-                        <img src="imagens/Logos/Chapeu_Gold.png" alt="Plano-Gold">
-                    </div>
-
-                    <h2>Plano Premium Gold</h2>
-
-                    <ul>
-                        <li>Consultoria de Nutricionistas</li>
-                        <li>15% de Desconto em Produtos</li>
-                        <li>Receitas Interativas</li>
-                        <li>Comunidade Exclusiva</li>
-                        <li>Entregas Exclusivas</li>
-                        <li>Ferramenta Avançada de Planejamento</li>
-                        <li>Suporte Prioritário</li>
-                    </ul>
-
-                    <div class="button_plan">
-                        <button class="normal">Assine agora</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
     </section>
 
     <section id="newsletter" class="section_p1 section_m1">
@@ -514,7 +402,7 @@
 
     <footer class="section_p1">
         <div class="col">
-            <img src="imagens/Logos/Logo site trabalho.png" alt="Logo" class="logo">
+            <img src="../imagens/Logos/Logo site trabalho.png" alt="Logo" class="logo">
             <h4>Contatos</h4>
             <p><strong>Localização:</strong> Goiás, Cidade Ocidental</p>
             <p><strong>Telefone:</strong> +55 61 99553-7078/9834-1756</p>
@@ -554,15 +442,15 @@
             <h4>Instalar App</h5>
                 <p>Em Breve na App Store e Google Pay</p>
                 <div class="row">
-                    <img src="imagens/Pay/app.jpg" alt="App Store">
-                    <img src="imagens/Pay/play.jpg" alt="Play Store">
+                    <img src="../imagens/Pay/app.jpg" alt="App Store">
+                    <img src="../imagens/Pay/play.jpg" alt="Play Store">
                 </div>
                 <p>Gateways de Pagamento Seguros</p>
-                <img src="imagens/Pay/pay.png" alt="Pays">
+                <img src="../imagens/Pay/pay.png" alt="Pays">
         </div>
 
         <div class="copyright">
-            <p>© 2024 - <a href="https://github.com/Batista204">Arthur de Andrade Batista</a></p>
+            <p>© 2024 - <a href="https://github.com/Batista204" target="_blank">Arthur de Andrade Batista</a></p>
         </div>
     </footer>
 
@@ -588,7 +476,6 @@
             <button class="buttons">Recusar</button>
         </div>
     </div>
-
+    
 </body>
-
 </html>
