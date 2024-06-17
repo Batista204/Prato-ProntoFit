@@ -951,9 +951,14 @@ footer .copyright a:hover {
 
 #cupon button,
 #subtotal button {
-    background-color: rgb(41, 180, 41);
+    background-color: rgb(44, 218, 44);
     color: #fff;
     padding: 12px 10px;
+}
+
+#cupon button:hover,
+#subtotal button:hover {
+    background-color: rgb(8, 184, 8);
 }
 
 #subtotal {
@@ -975,6 +980,39 @@ footer .copyright a:hover {
     padding: 10px;
     font-size: 13px;
 }
+
+/* novidades */
+
+.Novidade {
+    background-image: url(../imagens/Slides/Banner_Page04.png);
+    background-position: center center;
+}
+
+#blog {
+    padding: 150px 150px 0 150px;
+}
+
+#blog .blog_box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+#blog .blog_img {
+    width: 25%;
+    margin-right: 40px;
+}
+
+#blog img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#blog .blog_detalhes {
+    width: 50%;
+} 
 
 /* ------------------ Adicionais ------------------  */
 
